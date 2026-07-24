@@ -4,7 +4,7 @@ Tethered bootrom exploit for Apple A12, S4/S5 & A13 SoCs (A12X/Z can theoretical
 
 ## Bug & exploit write-up
 
-Available in [our blogpost](https://ps.tc/pages/blog-usbliter8.html).
+Available in [this archived blog post](https://web.archive.org/web/20260719005132/https://ps.tc/pages/blog-usbliter8.html).
 
 ## Usage
 
@@ -29,7 +29,7 @@ RP2040 can be theoretically used as well, but this is currently **NOT** very sta
 
 ### Flashing firmware
 
-Compiled **UF2** images for the boards mentioned above are available in Releases section. They can be flashed either via mass storage protocol of RP2350 bootrom or via [picotool](https://github.com/raspberrypi/picotool).
+Compiled **UF2** images are available for [RP2350 boards here](https://github.com/JoshAtticus/usbliter8/releases/tag/rp2350) and for [RP2040 boards here](https://github.com/JoshAtticus/usbliter8/releases/tag/rp2040). They can be flashed either via mass storage protocol of RP2350 bootrom or via [picotool](https://github.com/raspberrypi/picotool).
 
 If your board is not among supported ones, you can create your own board configuaration file (in `/boards` folder) and refer to building instructions that come later in this README.
 
