@@ -95,47 +95,11 @@ options:
 
 * Pico SDK — SDK Release 2.2.0 (commit `a1438dff1d38bd9c65dbd693f0e5db4b9ae91779`)
 * ARM toolchain — 15.2.Rel1
-
+'''
 cd usbliter8
-cmake -S . -B build -DPICO_BOARD=
-P
-I
-C
-O
-B
-O
-A
-R
-D
-−
-D
-P
-I
-C
-O
-S
-D
-K
-P
-A
-T
-H
-=
-PICO 
-B
-​
- OARD−DPICO 
-S
-​
- DK 
-P
-​
- ATH=PICO_SDK_PATH -DPICO_TOOLCHAIN_PATH=$PICO_TOOLCHAIN_PATH
+cmake -S . -B build -DPICO_BOARD=$PICO_BOARD -DPICO_SDK_PATH=$PICO_SDK_PATH -DPICO_TOOLCHAIN_PATH=$PICO_TOOLCHAIN_PATH
 cmake --build build
-
-Замените `$PICO_SDK_PATH` и `$PICO_TOOLCHAIN_PATH` на ваши пути. `$PICO_BOARD` — один из следующих:
-
-* waveshare_rp2350_usb_a
+'''
 * waveshare_rp2350_zero
 * pimoroni_tiny2350
 * pico2
