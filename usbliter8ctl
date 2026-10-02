@@ -13,7 +13,7 @@ def open_device():
     dev = usb.core.find(idProduct=0x1227)
 
     if not dev:
-        raise RuntimeError("no device?")
+        raise RuntimeError("no Pwned DFU device found (expected USB product ID 0x1227)")
 
     srnm = dev.serial_number
 
